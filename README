@@ -2,6 +2,24 @@
 
 Scripts to run POS tagging experiments with historical German texts that contain spelling variants.
 
+## Install dependencies
+
+Script to install the tools needed for the experiments.
+For tools under version control, the version used for the experiments in the paper is checked out.
+
+- install_dependencies.sh:
+  Download and build the following tools in the folder lib/
+
+  - SpellvarDetection (https://github.com/fab-bar/spellvardetection)
+  - csmtiser (https://github.com/clarinsi/csmtiser)
+  - hyperwords (https://bitbucket.org/omerlevy/hyperwords)
+  - fastText (https://github.com/facebookresearch/fastText)
+  - TreeTagger (https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
+  - RFTagger (https://www.cis.uni-muenchen.de/~schmid/tools/RFTagger/)
+  - HunPos (https://github.com/mivoq/hunpos)
+  - Marmot (http://cistern.cis.lmu.de/marmot/)
+
+
 ## Data
 
 Scripts to get and prepare the data used for the POS tagging experiments.
