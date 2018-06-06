@@ -1,0 +1,16 @@
+# POS tagging texts with spelling variation
+
+Scripts to run POS tagging experiments with historical German texts that contain spelling variants.
+
+## Data
+
+Scripts to get and prepare the data used for the POS tagging experiments.
+
+- prepare_re[mn].sh:
+  Download and prepare the data from ReM/ReN.
+  Data is split in train, test, devel and background corpus (for creation of embeddings)
+
+  - ReM is version 1.0 (islrn.org/resources/332-536-136-099-5)
+  - ReN is version 0.6 (http://hdl.handle.net/11022/0000-0007-C64C-5)
+
+Run prepare_re[mn].sh to extract the data and remove texts not used for the experiments.
