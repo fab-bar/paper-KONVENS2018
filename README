@@ -32,3 +32,9 @@ Scripts to get and prepare the data used for the POS tagging experiments.
   - ReN is version 0.6 (http://hdl.handle.net/11022/0000-0007-C64C-5)
 
 Run prepare_re[mn].sh to extract the data and remove texts not used for the experiments.
+
+- create_embeddings.sh
+- create_normalization.sh
+- create_spellvars.sh
+
+Run the create_* scripts to create the embeddings, automatic normalizations and automatically detected spelling variants for ReM and ReN that are used in the experiments.
