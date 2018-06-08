@@ -68,3 +68,19 @@ only devel and test:
 17. Generated spelling variant based on pos, morph and lemma
 18. Generated spelling variant based on norm (only ReM)
 19. Generated spelling variant based on pos
+
+## Running the experiments
+
+The experiments are defined in `experiment_settings.py`. After having
+succesfully installed the dependencies and prepared the data, they can be run
+with the scripts `train_and_annotate.py`.
+
+There are two scripts to show the results of the experiments:
+
+- eval.py
+  Output the results of all experiments for the given data- and testset.  
+  Usage: `python3 eval.py dataset testset`
+
+- compare.py
+  Compare two experiments using McNemar's test with continuity correction.  
+  Usage: `python3 compare.py dataset testset experiment-1-name experiment-2-name`
