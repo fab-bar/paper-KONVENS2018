@@ -1,6 +1,20 @@
 # POS tagging texts with spelling variation
 
 Scripts to run POS tagging experiments with historical German texts that contain spelling variants.
+The scripts can be used to reproduce the experiments from the following paper:
+
+```bib
+@inproceedings{Barteld-et-al-2018,
+  author    = {Fabian Barteld and Chris Biemann and Heike Zinsmeister},
+  editor    = {Adrien Barbaresi and Hanno Biber and Friedrich Neubarth and Rainer Osswald},
+  title     = {Variations on the theme of variation: Dealing with spelling variation for finegrained {POS} tagging of historical texts},
+  booktitle = {Proceedings of the 14th Conference on Natural Language Processing, {KONVENS} 2018, Vienna, Austria, September 19-21, 2018},
+  pages     = {202--212},
+  publisher = {{\"{O}}sterreichische Akademie der Wissenschaften},
+  year      = {2018},
+  url       = {https://www.oeaw.ac.at/fileadmin/subsites/academiaecorpora/PDF/konvens18\_23.pdf},
+}
+```
 
 ## Install dependencies
 
