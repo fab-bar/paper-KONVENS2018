@@ -42,13 +42,18 @@ deactivate
 cd ..
 
 ## embedding experiments
-hg clone https://bitbucket.org/omerlevy/hyperwords
+git clone https://github.com/lukaselmer/hyperwords
 cd hyperwords
-hg checkout 688addd
+git checkout bc7a84beccede98fecfe1ff3a60ada46650df6da
+chmod +x scripts/*
 virtualenv .venv
 source .venv/bin/activate
 pip install numpy scipy sparsesvd docopt
 deactivate
+
+git clone https://github.com/BIU-NLP/word2vecf.git
+git checkout e075b2cc96c6b5aede4dfe83585aceadf14ce570
+make -C word2vecf
 cd ..
 
 git clone https://github.com/facebookresearch/fastText.git
@@ -62,10 +67,10 @@ cd ..
 ## TreeTagger
 mkdir TreeTagger
 cd TreeTagger
-wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger-linux-3.2.1.tar.gz
+wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger-linux-3.2.3.tar.gz
 wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tagger-scripts.tar.gz
 wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/install-tagger.sh
-wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/middle-high-german-par-linux-3.2-utf8.bin.gz
+wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/middle-high-german.par.gz
 sh install-tagger.sh
 cd ..
 

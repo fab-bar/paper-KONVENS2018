@@ -23,9 +23,9 @@ add_norm test simple
 
 ## 2. tags given by tree tagger for (automatic) normalization
 function add_tags() {
-    python3 add_treetagger_tags.py data/rem_train $1 lib/TreeTagger lib/TreeTagger/lib/middle-high-german-utf8.par > data/rem_train_tmp
-    python3 add_treetagger_tags.py data/rem_devel $1 lib/TreeTagger lib/TreeTagger/lib/middle-high-german-utf8.par > data/rem_devel_tmp
-    python3 add_treetagger_tags.py data/rem_test $1 lib/TreeTagger lib/TreeTagger/lib/middle-high-german-utf8.par > data/rem_test_tmp
+    python3 add_treetagger_tags.py data/rem_train $1 lib/TreeTagger lib/TreeTagger/lib/middle-high-german.par > data/rem_train_tmp
+    python3 add_treetagger_tags.py data/rem_devel $1 lib/TreeTagger lib/TreeTagger/lib/middle-high-german.par > data/rem_devel_tmp
+    python3 add_treetagger_tags.py data/rem_test $1 lib/TreeTagger lib/TreeTagger/lib/middle-high-german.par > data/rem_test_tmp
 
     mv data/rem_train_tmp data/rem_train
     mv data/rem_devel_tmp data/rem_devel
