@@ -68,9 +68,9 @@ re[mn]_train, re[mn]_devel and re[mn]_test. These files contain the follwing col
 06. Lemma
 07. csmtiser - Normalization based on strict (only ReM)
 08. csmtiser - Normalization based on simple (only ReM)
-09. TreeTagger - POS tag based on strict (only ReM)
-10. TreeTagger - POS tag based on simple (only ReM)
-11. TreeTagger - POS tag based on norm (only ReM)
+09. TreeTagger - POS tag based on norm (only ReM)
+10. TreeTagger - POS tag based on strict (only ReM)
+11. TreeTagger - POS tag based on simple (only ReM)
 12. TreeTagger - POS tag based on csmtiser normlization strict (only ReM)
 13. TreeTagger - POS tag based on csmtiser normalization simple (only ReM)
 
